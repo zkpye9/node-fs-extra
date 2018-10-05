@@ -27,12 +27,12 @@ fs.writeJson('./package.json', {name: 'fs-extra'}, err => {
 
 // With Promises:
 fs.writeJson('./package.json', {name: 'fs-extra'})
-.then(() => {
-  console.log('success!')
-})
-.catch(err => {
-  console.error(err)
-})
+  .then(() => {
+    console.log('success!')
+  })
+  .catch(err => {
+    console.error(err)
+  })
 
 // With async/await:
 async function example () {

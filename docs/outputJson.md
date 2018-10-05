@@ -32,13 +32,13 @@ fs.outputJson(file, {name: 'JP'}, err => {
 
 // With Promises:
 fs.outputJson(file, {name: 'JP'})
-.then(() => fs.readJson(file))
-.then(data => {
-  console.log(data.name) // => JP
-})
-.catch(err => {
-  console.error(err)
-})
+  .then(() => fs.readJson(file))
+  .then(data => {
+    console.log(data.name) // => JP
+  })
+  .catch(err => {
+    console.error(err)
+  })
 
 // With async/await:
 async function example (f) {
